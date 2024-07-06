@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Robtoo&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+        <h1 id="caption">Tick-Tock</h1>
+        <div class="timer">00:00:00:00</div>
+        <div class="Options">
+            <button class="buttons" id="start-button">Start</button>
+            <button class="buttons" id="pause-button" disabled>Pause</button>
+            <button class="buttons" id="resume-button" disabled>Resume</button>
+        </div>
+        <div class="Options">
+            <button class="buttons" id="reset-button">Reset</button>
+            <button class="buttons" id="laps-button">Laps</button>
+        </div>
+        <div id="laps-container">
+            <ul id="laps-list"></ul>
+        </div>
+    </div>     
+
+    <script src="script.js"></script>
+</body>
+</html>

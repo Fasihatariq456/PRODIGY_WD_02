@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#97FEED;
+    font-family: 'Bebas Neue', sans-serif;
+    
+}
+
+#container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+   
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.timer {
+    height: 100px;
+    padding: 20px;
+    margin: 30px 10px 20px 10px ;
+    font-size: 100px;
+}
+
+.Options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    padding: 10px 30px;
+    margin: 0 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #35A29F;
+    border-radius: 20px;
+}
+
+.buttons:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.buttons:hover{
+  background-color: #0B666A;
+ }
+
+#laps-container {
+    margin-top: 20px;
+    display: none; /* Hide laps container by default */
+    text-align: left; 
+ }
+
+#laps-list {
+ list-style-type: none;
+ padding: 0;
+ }
+
+.lap-item {
+ margin-bottom: 5px;
+ font-size: 16px;
+ border-bottom: 1px solid #ccc;
+ padding-bottom: 5px;
+ }
+
+/* animation */
+
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* media query*/
+
+@media screen and (max-width: 600px) {
+    .timer {
+        font-size: 80px;
+    }
+}
+
+
